@@ -52,18 +52,18 @@ const creaCards = (member) => {   //  creo la funzione che ha come parametro i m
       <p>${role}</p>
       <a href="mailto:${email}">${email}</a>
     </div>
-  </div> `;  // voglio che mi ritorni una card con i dati che ho scelto di inserire
+  </div> `;                         // voglio che mi ritorni una card con i dati che ho scelto di inserire
  }  
 
  const myTeam = (teamMembers) => {          // creo una funzione che ha come parametro l'intero array, 
   let cards = '';                           // creo una varibile e la lascio vuota,
   for (let member of teamMembers) {         // inizio il ciclo del mio array (ciclo for of),
-    cards += creaCards(member)              // ad ogni iterazione, viene richiamata la funzione creaCards, e aggiunge contenuto a cards,
-  }
-  cardMembers.innerHTML = cards;              // infine stampo in pagina,
+    cards += creaCards(member)              // ad ogni iterazione, viene richiamata la funzione
+  }                                         //  creaCards, e aggiunge contenuto a cards,
+  cardMembers.innerHTML = cards;            // infine stampo in pagina,
 
  }
- myTeam(teamMembers);                            // Invoco la funzione, che mi genera tutto il lavoro.
+ myTeam(teamMembers);                       // Invoco la funzione, che mi genera tutto il lavoro.
 
 
 
